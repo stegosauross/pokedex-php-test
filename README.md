@@ -33,7 +33,8 @@ be aware that this API is rate-limited.
 To get started, we have provided a skeleton folder structure, please create a 
 fork of this repository either here on gitlab or via another public repository like github.
 
-We recommend that you spend no more than two to three hours on this assignment. 
+We recommend that you spend no more than two hours on this challenge, 
+we are more interested in how you approach the task than spending lots of time on it.
 
 
 ### User Stories
@@ -56,8 +57,8 @@ We recommend that you spend no more than two to three hours on this assignment.
 
  
 ## Submission
-To submit your solution, please fork this repository, no merge/pull request is required,
-and provide us a link to your finished version.
+When you are aready to submit, please ensure you have forked this repository, no merge/pull request is required,
+and provide us a link to your attempt.
 
 
 ## Copyright
