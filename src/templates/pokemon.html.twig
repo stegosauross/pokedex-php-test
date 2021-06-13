@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+{% block title %}{{pokemon.name | capitalize}} - Pokemon{% endblock %}
+
+{% block content %}
+    {% if pokemon is defined %}
+        <img src="{{pokemon.imageUrl}}">
+        <ul>
+            <li>Name: {{pokemon.name | capitalize}}</li>
+            <li>Height: {{pokemon.height}} dm</li>
+            <li>Weight: {{pokemon.weight}} hg</li>
+            <li>Abilites: 
+                <ul>
+                {% for ability in pokemon.abilities %}
+                    <li>{{ability | capitalize}}</li>
+                {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    {% else %}
+        <p>Pokemon not found.</p>
+    {% endif %}
+    <a href="/">Back to main page</a>
+{% endblock %}

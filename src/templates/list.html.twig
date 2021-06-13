@@ -1,0 +1,32 @@
+{% extends "base.html.twig" %}
+{% block title %}Main Menu{% endblock %}
+
+{% block head %}
+{{ parent() }}
+<script type="application/javascript">
+    $(document).ready( function () {
+        $('#pokemon_list').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "ajax": "/data",
+            "columnDefs": [ {
+                "targets": 0,
+                "render": function (data, type, full, meta) {
+                    return '<a href="pokemon/'+data+'">'+data+'</a>'; 
+                },
+                "orderable": false
+            }]
+        });
+    });
+</script>
+{% endblock %}
+
+{% block content %}
+<table id="pokemon_list" class="display">
+    <thead>
+        <tr>
+            <th>Pokemon</th>
+        </tr>
+    </thead>
+</table>
+{% endblock %}
