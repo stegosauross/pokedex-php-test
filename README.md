@@ -12,7 +12,7 @@ A small app for viewing information for Pokemon. Built on Slim Framework 4, util
 `/pokemon/{name}` View specfic Pokemon.
 
 ## Libraries used
-
-**Slim Framework**
-**DataTables:** Allows an accessible and paginated display of Pokemon names. Allows us to limit the amount of data returned from the API by making a request per page.
-**GuzzleHttp:** To facilitate calls to PokeAPI.
+- **Slim Framework**
+- **Twig**
+- **DataTables:** Allows an accessible and paginated display of Pokemon names. Also enables us to limit the amount of data returned from the API by making a request per page.
+- **GuzzleHttp:** To facilitate calls to PokeAPI.
